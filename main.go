@@ -62,22 +62,22 @@ type user struct {
 }
 
 var data = map[string]user{
-	"sammy": {
+	"SammyShark": {
 		ID:        1,
 		Username:  "SammyShark",
 		Followers: 987,
 	},
-	"jesse": {
+	"JesseOctopus": {
 		ID:        2,
 		Username:  "JesseOctopus",
 		Followers: 432,
 	},
-	"drew": {
+	"DrewSquid": {
 		ID:        3,
 		Username:  "DrewSquid",
 		Followers: 312,
 	},
-	"jamie": {
+	"JamieMantisShrimp": {
 		ID:        4,
 		Username:  "JamieMantisShrimp",
 		Followers: 654,
