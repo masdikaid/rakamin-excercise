@@ -16,10 +16,17 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
-        go-version: 1.17
+        go-version: 1.16
+
+    - name: Lint
+      run: make lint
 
     - name: Build
-      run: go build -v ./...
+      run: make build
 
-    - name: Test
-      run: go test -v ./...
+    - name: Push Heroku
+      uses: akhileshns/heroku-deploy@v3.12.12
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: "ecercise-deployment-masdikaid"
+        heroku_email: "masdikaid@gmail.com"

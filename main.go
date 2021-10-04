@@ -1,6 +1,7 @@
 package main
 
 import (
+	"os"
 	"strconv"
 
 	"github.com/gofiber/fiber/v2"
@@ -18,7 +19,7 @@ func main() {
 	app.Get("/:id", getUser)
 	app.Get("/follower/:username", getFollowers)
 
-	app.Listen(":3000")
+	app.Listen(":" + os.Getenv("PORT"))
 }
 
 func getFollowers(c *fiber.Ctx) error {
