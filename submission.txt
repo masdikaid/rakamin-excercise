@@ -1,0 +1,33 @@
+dengan hormat,
+
+berikut mas link submision saya :
+github -> https://github.com/masdikaid/rakamin-excercise.git
+heroku -> https://ecercise-deployment-masdikaid.herokuapp.com
+
+endpoint : 
+get user -> https://ecercise-deployment-masdikaid.herokuapp.com/:id
+get followers -> https://ecercise-deployment-masdikaid.herokuapp.com/follower/:username
+
+mock user existing :
+{
+    "SammyShark": {
+		ID:        1,
+		Username:  "SammyShark",
+		Followers: 987,
+	},
+	"JesseOctopus": {
+		ID:        2,
+		Username:  "JesseOctopus",
+		Followers: 432,
+	},
+	"DrewSquid": {
+		ID:        3,
+		Username:  "DrewSquid",
+		Followers: 312,
+	},
+	"JamieMantisShrimp": {
+		ID:        4,
+		Username:  "JamieMantisShrimp",
+		Followers: 654,
+	},
+}
